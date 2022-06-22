@@ -14,7 +14,5 @@ jobs:
       - run: npm install pm2@latest -g #install pm2 global
       - run: pm2 -V #check pm2 version
       - run: pm2 list #
-      - run: pm2 start index.js --watch
-      - run: pm2 list
-      - run: pm2 start index.js -i max # run pm2 in cluster mode
+      - run: pm2 start index.js --watch -i max
       - run: pm2 list
